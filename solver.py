@@ -32,6 +32,7 @@ class Solver:
 
             if by.lower() == "variance":
                 variances = X[group].var()
+                print("Variances:", variances)
                 best_features = variances.nlargest(n_select).index.tolist()
                 selected_features.extend(best_features)
             elif by.lower() == "importance":
@@ -52,12 +53,12 @@ if __name__ == "__main__":
     data = pd.DataFrame({
         'A': [1, 2, 3, 4],
         'B': [1, 2, 1, 2],
-        'C': [4, 5, 6, 7],
+        'C': [4, 5, 6, 8],
         'D': [1, 1, 1, 1]
     })
     
     feature_importance = pd.Series({'A': 0.5, 'B': 0.3, 'C': 0.7, 'D': 0.2})
     
     solver = Solver()
-    features_to_remove = solver.solve(data, feature_importance=feature_importance, by="importance", threshold=0.8)
+    features_to_remove = solver.solve(data, feature_importance=feature_importance, by="variance", threshold=0.8)
     print("Features to remove:", features_to_remove)
