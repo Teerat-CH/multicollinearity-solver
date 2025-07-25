@@ -1,7 +1,6 @@
 import pandas as pd
 import networkx as nx
 
-
 def mcl_solver(X: pd.DataFrame, feature_importance=None, by="variance", threshold=0.9, n_select=1):
     corr_matrix = X.corr().abs()
     features = X.columns.tolist()
