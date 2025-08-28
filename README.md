@@ -12,6 +12,15 @@ The method operates as follows:
    - **Feature importance** derived from a supervised model (e.g., Random Forest, Gradient Boosting Tree).  
    - **Variance**, to retain features with greater informational content.
 
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+  <img src="https://github.com/user-attachments/assets/f359feae-fa92-417e-bf80-a52d7e01d763" style="width: 55%;"/>
+  <span style="font-size: 2rem;">→</span>
+  <img src="https://github.com/user-attachments/assets/42a29eb2-aad1-4fb8-ac7e-42ebc09546b8" style="width: 35%;"/>
+</div>
+
+<div style="display: flex; justify-content: center;">
+  <img src="https://github.com/user-attachments/assets/0733cb49-b9be-4c29-9fee-cefa779cd19f" style="width: 50%; padding-bottom: 20px;">
+</div>
 ---
 
 ## Usage
